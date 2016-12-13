@@ -4,9 +4,9 @@ namespace Controller;
 
 class PersonController
 {
-    public function getPerson()
+    public function getPerson($id)
     {
-        // person has been get
+        $this->service->getPerson($id);
     }
 
     public function addPerson()

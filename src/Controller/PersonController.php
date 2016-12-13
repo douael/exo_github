@@ -4,6 +4,7 @@ namespace Controller;
 
 use Model\Person;
 
+
 class PersonController
 {
     public function getPerson($id)
@@ -13,13 +14,14 @@ class PersonController
 
     public function addPerson()
     {
+
         $person = new Person;
         $this->orm->addPerson($person);
     }
 
-    public function deletePerson()
+    public function deletePerson(Person $person)
     {
-        // person has been deleted
+        $this->orm->deletePerson($person;)
     }
 
     public function updatePerson()

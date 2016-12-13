@@ -15,6 +15,7 @@ class PersonController
     public function addPerson()
     {
 
+
         $person = new Person;
         $this->orm->addPerson($person);
     }
